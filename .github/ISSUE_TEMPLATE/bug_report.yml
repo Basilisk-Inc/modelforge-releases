@@ -1,0 +1,98 @@
+name: 🐛 Bug report
+description: Something is broken or behaving unexpectedly.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. Please fill in as much as you can — the more we know up front, the less back-and-forth before a fix.
+
+        **For security vulnerabilities**, please use the private channel in [SECURITY.md](https://github.com/TODO_GITHUB_ORG/modelforge-releases/blob/main/SECURITY.md) instead of a public issue.
+
+  - type: input
+    id: version
+    attributes:
+      label: ModelForge version
+      description: From `modelforge --version` or the UI footer.
+      placeholder: "v0.0.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Linux x86_64
+        - Linux ARM64
+        - Windows x86_64
+        - macOS Apple Silicon
+        - macOS Intel
+        - Other (describe in the report)
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: "Ubuntu 24.04 / Windows 11 23H2 / macOS 14.5"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU (if relevant)
+      description: Vendor, model, driver version. Skip if the bug isn't GPU-related.
+      placeholder: "NVIDIA RTX 3090, driver 535.183"
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Concise description of the bug. What did you do? What did you expect? What actually happened?
+      placeholder: |
+        I clicked Split Dataset on the Analysis page and got a 400 with "unknown field id". The split didn't run.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: A numbered list works best. If repro requires a specific dataset shape, describe it (you don't need to share the actual data).
+      placeholder: |
+        1. Create a new project.
+        2. Upload my_data.jsonl (SFT format, 8 records).
+        3. Open Analyze, wait for it to finish.
+        4. Click "Split into train + eval (90/10)".
+        5. Observe error toast.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Server log excerpt
+      description: |
+        Paste the relevant chunk from `~/.local/share/modelforge/data/logs/` or `%LOCALAPPDATA%\ModelForge\data\logs\`. Redact any sensitive data first. We don't need the full log, just the part around the error.
+      render: text
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Workarounds you tried, related issues, screenshots, hunches.
+
+  - type: checkboxes
+    id: search-checked
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched [existing issues](https://github.com/TODO_GITHUB_ORG/modelforge-releases/issues?q=is%3Aissue) and didn't find a duplicate.
+          required: true
+        - label: I'm running the [latest release](https://github.com/TODO_GITHUB_ORG/modelforge-releases/releases/latest) (or describe the older version above and why).
+          required: true

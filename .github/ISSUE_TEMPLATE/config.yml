@@ -1,0 +1,22 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Chat with the community
+    url: TODO_DISCORD_INVITE
+    about: |
+      Questions, "is X possible", "what's the best way to...", general discussion.
+      Faster than a GitHub issue for non-bug, non-feature topics.
+
+  - name: 📅 Book a demo or commercial call
+    url: TODO_CALENDLY_LINK
+    about: |
+      30-minute call about pricing, enterprise features, custom deployment.
+
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/TODO_GITHUB_ORG/modelforge-releases/security/advisories/new
+    about: |
+      Private security advisory — DO NOT file a public issue for vulnerabilities.
+
+  - name: 📚 Read the documentation
+    url: https://github.com/TODO_GITHUB_ORG/modelforge-releases/tree/main/docs
+    about: |
+      Installation, workflow, dataset formats, fine-tuning, API reference, licensing.
