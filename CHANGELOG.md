@@ -1,10 +1,10 @@
 # Changelog
 
-All notable changes to ModelForge will be documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project adheres to [Semantic Versioning](https://semver.org/) — though, until v1.0, breaking changes can land on minor bumps.
+All notable changes to Spinalis will be documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project adheres to [Semantic Versioning](https://semver.org/) — though, until v1.0, breaking changes can land on minor bumps.
 
 ## [Unreleased]
 
-Nothing here yet — open a [feature request](https://github.com/TODO_GITHUB_ORG/modelforge-releases/issues/new?template=feature_request.yml) if you want something prioritized.
+Nothing here yet — open a [feature request](https://github.com/Basilisk-Inc/spinalis-releases/issues/new?template=feature_request.yml) if you want something prioritized.
 
 ## [0.0.1] — 2026-05-04
 
@@ -38,7 +38,7 @@ First public release. Production-quality core, intentionally narrow surface area
 
 #### Chat persistence
 - Chat sessions stored in SQLite metadata + JSONL message bodies
-- Optional `X-ModelForge-Session-Id` header on the inference proxy enables auto-persistence of API-driven conversations
+- Optional `X-Spinalis-Session-Id` header on the inference proxy enables auto-persistence of API-driven conversations
 - `persist_history` toggle on each session — opt-out for ephemeral chats
 - Project-scoped chat history page with delete affordance
 - Inline thumbs-up/down on historical messages — corrections flow into the same dataset pipeline as live chat
@@ -67,7 +67,7 @@ First public release. Production-quality core, intentionally narrow surface area
 
 #### API
 - REST + WebSocket under `/api/v1/`
-- License tier exposed via response headers (`X-ModelForge-Tier`, `X-ModelForge-GPU-Budget`)
+- License tier exposed via response headers (`X-Spinalis-Tier`, `X-Spinalis-GPU-Budget`)
 - Project-scoped session listing endpoint
 - Correction submission with format-locked dataset targeting
 
@@ -84,5 +84,5 @@ These aren't bugs — they're scope decisions for v0.0.1. See [`ROADMAP.md`](ROA
 
 ---
 
-[Unreleased]: https://github.com/TODO_GITHUB_ORG/modelforge-releases/compare/v0.0.1...HEAD
-[0.0.1]: https://github.com/TODO_GITHUB_ORG/modelforge-releases/releases/tag/v0.0.1
+[Unreleased]: https://github.com/Basilisk-Inc/spinalis-releases/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/Basilisk-Inc/spinalis-releases/releases/tag/v0.0.1

@@ -6,7 +6,7 @@
 
 ### Preferred channels
 
-1. **GitHub Security Advisories** — go to the [Security tab](https://github.com/TODO_GITHUB_ORG/modelforge-releases/security/advisories/new) and click "Report a vulnerability". This is private and gives us the most context up front.
+1. **GitHub Security Advisories** — go to the [Security tab](https://github.com/Basilisk-Inc/spinalis-releases/security/advisories/new) and click "Report a vulnerability". This is private and gives us the most context up front.
 
 2. **Email** — TODO_SECURITY_EMAIL with subject `[SECURITY] <short description>`.
 
@@ -22,7 +22,7 @@ If you can't use either, contact a maintainer privately on Discord / Slack / Tel
 
 A useful report has, at minimum:
 
-- ModelForge version (e.g. `v0.0.1`)
+- Spinalis version (e.g. `v0.0.1`)
 - Operating system and architecture
 - Steps to reproduce the issue
 - Impact — what can an attacker do? What's the worst case?
@@ -45,9 +45,9 @@ We'll coordinate disclosure with you. If you want public credit you'll get it; i
 
 The following are **in scope**:
 
-- The ModelForge binary as distributed through this release repository
+- The Spinalis binary as distributed through this release repository
 - The bundled Python runtime as we package it (vulnerabilities in upstream packages we ship)
-- The web UI as served by ModelForge
+- The web UI as served by Spinalis
 - The license-enforcement mechanism
 - The OpenAI-compatible API surface
 - Installation and update flows on Linux, Windows, and macOS
@@ -55,9 +55,9 @@ The following are **in scope**:
 The following are **out of scope** (please don't report these as vulnerabilities — they're known classes of behavior):
 
 - Issues in third-party tooling we don't control (e.g. PyTorch CUDA bugs, Hugging Face Hub outages). Please report those upstream.
-- Issues that require physical access to the Machine ModelForge runs on. ModelForge is not designed to be tamper-resistant against its own administrator — license enforcement is intended to deter casual oversharing, not to thwart hardware-level attackers.
+- Issues that require physical access to the Machine Spinalis runs on. Spinalis is not designed to be tamper-resistant against its own administrator — license enforcement is intended to deter casual oversharing, not to thwart hardware-level attackers.
 - Issues that require a malicious license file you've crafted yourself. The license signature check is the only defense; that's the design.
-- Issues exploitable only via training data you supply yourself. ModelForge processes whatever JSONL you feed it; if you train a model to leak its own weights, that's working as configured.
+- Issues exploitable only via training data you supply yourself. Spinalis processes whatever JSONL you feed it; if you train a model to leak its own weights, that's working as configured.
 - DOS via massive datasets or oversized model downloads — the platform doesn't impose hard limits on these by design.
 
 ## What we don't ask of researchers
@@ -71,4 +71,4 @@ The following are **out of scope** (please don't report these as vulnerabilities
 
 Reporters of confirmed vulnerabilities are credited in the release notes for the fix, unless they prefer otherwise. A "Security Researchers" page may be added to this repo once we have a few names to list.
 
-Thanks for helping keep ModelForge users safe.
+Thanks for helping keep Spinalis users safe.

@@ -12,11 +12,11 @@ contact_links:
       30-minute call about pricing, enterprise features, custom deployment.
 
   - name: 🔒 Report a security vulnerability
-    url: https://github.com/TODO_GITHUB_ORG/modelforge-releases/security/advisories/new
+    url: https://github.com/Basilisk-Inc/spinalis-releases/security/advisories/new
     about: |
       Private security advisory — DO NOT file a public issue for vulnerabilities.
 
   - name: 📚 Read the documentation
-    url: https://github.com/TODO_GITHUB_ORG/modelforge-releases/tree/main/docs
+    url: https://github.com/Basilisk-Inc/spinalis-releases/tree/main/docs
     about: |
       Installation, workflow, dataset formats, fine-tuning, API reference, licensing.

@@ -8,13 +8,13 @@ body:
       value: |
         Thanks for taking the time to file a bug. Please fill in as much as you can — the more we know up front, the less back-and-forth before a fix.
 
-        **For security vulnerabilities**, please use the private channel in [SECURITY.md](https://github.com/TODO_GITHUB_ORG/modelforge-releases/blob/main/SECURITY.md) instead of a public issue.
+        **For security vulnerabilities**, please use the private channel in [SECURITY.md](https://github.com/Basilisk-Inc/spinalis-releases/blob/main/SECURITY.md) instead of a public issue.
 
   - type: input
     id: version
     attributes:
-      label: ModelForge version
-      description: From `modelforge --version` or the UI footer.
+      label: Spinalis version
+      description: From `spinalis --version` or the UI footer.
       placeholder: "v0.0.1"
     validations:
       required: true
@@ -78,7 +78,7 @@ body:
     attributes:
       label: Server log excerpt
       description: |
-        Paste the relevant chunk from `~/.local/share/modelforge/data/logs/` or `%LOCALAPPDATA%\ModelForge\data\logs\`. Redact any sensitive data first. We don't need the full log, just the part around the error.
+        Paste the relevant chunk from `~/.local/share/spinalis/data/logs/` or `%LOCALAPPDATA%\Spinalis\data\logs\`. Redact any sensitive data first. We don't need the full log, just the part around the error.
       render: text
 
   - type: textarea
@@ -92,7 +92,7 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I searched [existing issues](https://github.com/TODO_GITHUB_ORG/modelforge-releases/issues?q=is%3Aissue) and didn't find a duplicate.
+        - label: I searched [existing issues](https://github.com/Basilisk-Inc/spinalis-releases/issues?q=is%3Aissue) and didn't find a duplicate.
           required: true
-        - label: I'm running the [latest release](https://github.com/TODO_GITHUB_ORG/modelforge-releases/releases/latest) (or describe the older version above and why).
+        - label: I'm running the [latest release](https://github.com/Basilisk-Inc/spinalis-releases/releases/latest) (or describe the older version above and why).
           required: true
