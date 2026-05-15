@@ -1,4 +1,4 @@
-# ModelForge End User License Agreement
+# Spinalis End User License Agreement
 
 **Version 1.0 — Effective May 2026**
 
@@ -8,19 +8,19 @@
 
 ## 1. Definitions
 
-- **"Software"** — the ModelForge binary executable, bundled Python runtime, web UI assets, documentation, and any updates Licensor provides.
-- **"Licensor"** — TODO_LEGAL_ENTITY_NAME, the publisher of ModelForge.
+- **"Software"** — the Spinalis binary executable, bundled Python runtime, web UI assets, documentation, and any updates Licensor provides.
+- **"Licensor"** — TODO_LEGAL_ENTITY_NAME, the publisher of Spinalis.
 - **"Licensee"** ("you", "your") — the individual or legal entity that downloads, installs, or uses the Software.
 - **"GPU"** — a single physical or virtual graphics processing unit, identified by its hardware UUID, attached to a Machine.
-- **"Machine"** — a single physical or virtual computer system, identified by ModelForge's machine fingerprint.
-- **"Tier"** — Community, Pro, or Enterprise, as documented in ModelForge's pricing.
+- **"Machine"** — a single physical or virtual computer system, identified by Spinalis's machine fingerprint.
+- **"Tier"** — Community, Pro, or Enterprise, as documented in Spinalis's pricing.
 - **"License File"** — an Ed25519-signed token issued by Licensor authorizing a Tier on a specific Machine.
 
 ## 2. Grant of License
 
 Subject to your compliance with this Agreement, Licensor grants you a non-exclusive, non-transferable, revocable license to install and use the Software on Machines you own or control, for your internal business or personal purposes, limited by the Tier you have activated.
 
-The first GPU on any Machine running ModelForge is automatically licensed at the **Community Tier** at no cost. Additional GPUs require a paid License File for that Machine.
+The first GPU on any Machine running Spinalis is automatically licensed at the **Community Tier** at no cost. Additional GPUs require a paid License File for that Machine.
 
 ## 3. Restrictions
 
@@ -38,7 +38,7 @@ e. **Remove notices.** Remove, alter, or obscure copyright, trademark, or propri
 
 ## 4. License Tiers
 
-The Tier active on a Machine determines the maximum number of GPUs ModelForge will use on that Machine:
+The Tier active on a Machine determines the maximum number of GPUs Spinalis will use on that Machine:
 
 | Tier | GPUs per Machine | Activation |
 |---|---|---|

@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for taking the time to suggest something. The best feature requests describe the problem, not the solution — that gives us room to find the right fix.
 
-        **Before filing**, scan the [ROADMAP](https://github.com/TODO_GITHUB_ORG/modelforge-releases/blob/main/ROADMAP.md). If your idea is already planned, give the existing roadmap item a 👍 instead.
+        **Before filing**, scan the [ROADMAP](https://github.com/Basilisk-Inc/spinalis-releases/blob/main/ROADMAP.md). If your idea is already planned, give the existing roadmap item a 👍 instead.
 
   - type: textarea
     id: problem
@@ -43,7 +43,7 @@ body:
       options:
         - "Nice to have — wouldn't change my usage"
         - "Would meaningfully improve my workflow"
-        - "Blocking — can't use ModelForge without it"
+        - "Blocking — can't use Spinalis without it"
     validations:
       required: true
 
@@ -71,5 +71,5 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I searched [existing issues](https://github.com/TODO_GITHUB_ORG/modelforge-releases/issues?q=is%3Aissue) and the [roadmap](https://github.com/TODO_GITHUB_ORG/modelforge-releases/blob/main/ROADMAP.md) and this isn't already there.
+        - label: I searched [existing issues](https://github.com/Basilisk-Inc/spinalis-releases/issues?q=is%3Aissue) and the [roadmap](https://github.com/Basilisk-Inc/spinalis-releases/blob/main/ROADMAP.md) and this isn't already there.
           required: true
